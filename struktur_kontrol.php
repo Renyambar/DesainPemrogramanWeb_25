@@ -80,4 +80,14 @@ echo "Total nilai setelah mengabaikan 2 tertinggi & 2 terendah: $total <br>";
 // rata-rata
 $rata_rata = $total / count($nilai);
 echo "Rata-rata: $rata_rata <br>";
+
+$diskon = 20;
+$harga = 120000;
+if ($harga > 100000) {
+    $potongan = ($diskon / 100) * $harga;
+    $hargaBayar = $harga - $potongan;
+} else {
+    $hargaBayar = $harga;
+}
+echo "Harga yang harus dibayar: Rp " . $hargaBayar ."<br>";
 ?>
