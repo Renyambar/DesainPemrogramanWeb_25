@@ -90,4 +90,9 @@ if ($harga > 100000) {
     $hargaBayar = $harga;
 }
 echo "Harga yang harus dibayar: Rp " . $hargaBayar ."<br>";
+
+$poin = 620;
+echo "Total skor pemain adalah: " . $poin . "<br>";
+$hadiah = ($poin > 500) ? "YA" : "TIDAK";
+echo "Apakah pemain mendapatkan hadiah tambahan? " . $hadiah;
 ?>
