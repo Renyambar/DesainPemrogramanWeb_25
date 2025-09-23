@@ -55,4 +55,29 @@ foreach ($daftarNilai[$mataKuliah] as $nilai) {
     echo "Nama: {$nilai[0]}, Nilai: {$nilai[1]} <br>";
 }
 
+$siswa = [
+    ["Alice", 85],
+    ["Bob", 92],
+    ["Charlie", 78],
+    ["David", 64],
+    ["Eva", 90]
+];
+// Hitung total nilai
+$total = 0;
+for ($i = 0; $i < count($siswa); $i++) {
+    $total += $siswa[$i][1];
+}
+
+// Hitung rata-rata
+$rata = $total / count($siswa);
+
+echo "Rata-rata kelas: " . $rata . "<br>";
+echo "Siswa dengan nilai di atas rata-rata:<br>";
+
+for ($i = 0; $i < count($siswa); $i++) {
+    if ($siswa[$i][1] > $rata) {
+        echo $siswa[$i][0] . " - " . $siswa[$i][1] . "<br>";
+    }
+}
+
 ?>
