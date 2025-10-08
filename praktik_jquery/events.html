@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Praktikum Events</title>
+    <style>
+        #paragraf {
+            width: 600px;
+            height: 80px;
+            background-color: pink;
+            line-height: 80px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Event saat diklik satu kali
+            $("#paragraf").click(function() {
+                $("#paragraf").css("color", "white");
+            });
+
+            // Event saat kursor mouse berada di atas elemen
+            $("#paragraf").mouseover(function() {
+                $("#paragraf").css("background-color", "silver");
+            });
+
+            // Event saat kursor mouse keluar dari elemen
+            $("#paragraf").mouseout(function() {
+                $("#paragraf").css("background-color", "blue");
+            });
+
+            // Event saat diklik dua kali
+            $("#paragraf").dblclick(function() {
+                $("#paragraf").css("border", "solid 3px black");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="paragraf">Praktikum Minggu ke-4</div>
+</body>
+</html>
