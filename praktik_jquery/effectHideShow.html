@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Praktikum Effect Hide Show</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".tombol1").click(function() {
+                $("div").hide();
+            });
+            $(".tombol2").click(function() {
+                $("div").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="tombol1">Tombol 1 (Hide)</button>
+    <button class="tombol2">Tombol 2 (Show)</button>
+    <br><br>
+    <div id="div1" class="kotak"></div>
+    <div id="div2" class="kotak"></div>
+    <div id="div3" class="kotak"></div>
+</body>
+</html>
